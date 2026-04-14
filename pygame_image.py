@@ -26,18 +26,17 @@ def main():
 
         key = pg.key.get_pressed()
         
-        vx, vy = -1, 0   
-        if key[pg.K_RIGHT]:
-            vx += 2
-        if key[pg.K_LEFT]:
-            vx -= 2
+        kk_rct.move_ip(-1, 0)
+
         if key[pg.K_UP]:
-            vy -= 2
+            kk_rct.move_ip(0, -5)
         if key[pg.K_DOWN]:
-            vy += 2
-
-        kk_rct.move_ip(vx, vy)
-
+            kk_rct.move_ip(0, 5)
+        if key[pg.K_LEFT]:
+            kk_rct.move_ip(-5, 0)
+        if key[pg.K_RIGHT]:
+            kk_rct.move_ip(5, 0
+        
         bg_x -= 1
         if bg_x <= -1600:
             bg_x = 0
