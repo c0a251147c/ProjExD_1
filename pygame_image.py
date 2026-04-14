@@ -35,7 +35,7 @@ def main():
         if key[pg.K_LEFT]:
             kk_rct.move_ip(-5, 0)
         if key[pg.K_RIGHT]:
-            kk_rct.move_ip(5, 0
+            kk_rct.move_ip(5, 0)
         
         bg_x -= 1
         if bg_x <= -1600:
